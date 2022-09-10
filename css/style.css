@@ -1,0 +1,336 @@
+/* 1. posicionamiento
+2. modelo de caja
+3. tipografia
+4. visuales
+5. otros */
+:root{
+    /* colores */
+    --gradiado:linear-gradient(27deg, rgba(2,0,36,1) 0%, rgba(4,4,105,1) 18%, rgba(152,10,10,1) 100%); 
+    --gris:	#C0C0C0;
+    --just-white: #FFFFFF;;
+    --background-color2: #999999;
+    --black: #201E1C;
+    --bar-color: royalblue;
+    --fill-size: 0%;
+    --warm-black: #201E1C;
+
+
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "DM Sans",sans-serif;
+}
+
+/* todo del header */
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height:334px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: var(--gradiado);
+
+}
+header img{
+    width: 150%;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+
+}
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+    
+}
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white)
+}
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white)
+}
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 240px;
+    height: 48px;
+    background-color: var(--just-white);
+    /* sombra del bottum */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+
+
+}
+.header--button span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/pensando.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+/* termina el header */
+/* comienzo del main */
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    /* padding-block: 30px; */
+    background-color: var(--just-white);
+    
+
+}
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container .backgroundImg {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("../assets/img/img-portafolio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    /* color: var(--background-color2) */
+}
+
+
+
+/* css para creacion de una barra de progreso */
+.progress {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 15px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #730303;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+}
+
+/* segunda section */
+
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+
+}
+
+/* buscaaaa una imagen no la eh puestoooo que no se me olvide xd*/
+ .product-detail--batata-logo{
+    position: absolute;
+    width: max-content;
+    width: 40px;
+    height: 40px;
+    top: -50px;
+    left: calc(50% - 20px); 
+    /* top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-image: url("../assets/icons/contrato.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+    /* .product-detail__batata-logo {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /*Que sería lo mismo a poner translate(-20px, -12.5px);  
+    } */
+  
+
+ 
+
+
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+
+
+}
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight:  bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+        
+}
+.product-detail--card{
+    width: 90%;
+    min-width: 288;
+    max-width: 400px;
+    /* height: 150px; */
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.16);
+}
+.product-detail--card .clock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url("");
+    background-size:  cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product--card-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.img-container{
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 60vh; /*altura*/
+    background-image: url("../assets/img/img-teclado.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.img-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);  
+}
+
+footer{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 150px;
+    padding-left: 10px;
+    background-color:var(--background-color2); 
+}
+footer section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+
+}
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+    margin: 2%;
+}
+.right img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

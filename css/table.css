@@ -1,0 +1,16 @@
+.product-detail--card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto; 
+
+    
+}
+.right img{
+    height: 100px;
+    width: 100px;
+    margin-left: calc(100vw - 35rem);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
